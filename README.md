@@ -6,7 +6,7 @@ This project implements a distributed IoT system where multiple ESP8266 devices 
 
 ## Demo Video
 
-Watch the project demonstration: [UDP Communication Demo](https://youtu.be/VHKbJbl7Ohc)
+Demo Video: [UDP Communication Demo](https://youtu.be/VHKbJbl7Ohc)
 
 ## System Architecture
 
@@ -156,63 +156,3 @@ Where:
 - **Silent time**: 200ms (if no message received, device broadcasts)
 - **Reset hold time**: 3000ms (3 seconds)
 - **UDP port**: 4210
-
-## Troubleshooting
-
-### Common Issues
-
-1. **WiFi Connection Failed**
-   - Verify SSID and password in ESP8266 code
-   - Check WiFi network availability
-
-2. **No UDP Communication**
-   - Ensure all devices are on same network
-   - Check firewall settings on port 4210
-   - Verify UDP broadcast is enabled
-
-3. **GPIO Errors on Raspberry Pi**
-   - Check gpiod library installation
-   - Verify GPIO pin assignments
-   - Ensure proper permissions
-
-4. **LED Not Flashing**
-   - Check wiring connections
-   - Verify current-limiting resistors
-   - Test GPIO pin functionality
-
-### Debug Information
-
-- **ESP8266 Serial Monitor**: 115200 baud rate
-- **Raspberry Pi Console**: Real-time status messages
-- **Log File**: `sensor_readings.txt` for data verification
-
-## File Structure
-
-```
-├── ESP_code/
-│   └── ESP_code.ino          # ESP8266 Arduino code
-├── RPi_pycode.py             # Raspberry Pi 5 Python script
-├── README.md                 # This file
-└── sensor_readings.txt       # Generated log file (runtime)
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Author
-
-- **Lan H. Pham** - ECPS 216 IoT Systems & Software Assignment 3
-
-## Acknowledgments
-
-- ECPS 216 Course - IoT Systems & Software
-- ESP8266 and Raspberry Pi communities for documentation and examples
